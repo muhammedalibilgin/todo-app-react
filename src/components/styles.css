@@ -202,6 +202,7 @@ body {
       position: absolute;
       top: 0;
       bottom: 0;
+      left: 0; /* ben ekledim */
       margin: auto 0;
       border: none; /* Mobile Safari */
       -webkit-appearance: none;
@@ -210,6 +211,7 @@ body {
 
 .todo-list li .toggle {
       opacity: 0;
+      /* opacity: 10; */
 }
 
 .todo-list li .toggle + label {
@@ -256,6 +258,7 @@ body {
 
 .todo-list li .destroy:hover {
       color: #af5b5e;
+      /* color: blue; */
 }
 
 .todo-list li .destroy:after {

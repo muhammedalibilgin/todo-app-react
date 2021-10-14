@@ -14,6 +14,7 @@ function ToDoMain() {
 
       return (
             <section className="todoapp">
+                  <h1>yapılacaklar</h1>
                   <Input addTodos={setTodos} todos={todos} />
                   <hr />
                   <List todos={todos} />
