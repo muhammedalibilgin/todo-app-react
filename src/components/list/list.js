@@ -1,4 +1,12 @@
-function list({ todos }) {
+import { useState, useEffect } from "react";
+
+function List({ todos }) {
+      const [checked, setChecked] = useState(true);
+
+      useEffect(() => {
+            console.log("change");
+      }, [checked]);
+
       return (
             <section className="main">
                   <input className="toggle-all" type="checkbox" />
@@ -27,9 +35,18 @@ function list({ todos }) {
                               </div>
                         </li> */}
                         {todos.map((x, i) => (
-                              <li key={i}>
+                              <li className="completed" key={i}>
                                     <div className="view">
-                                          <input className="toggle" type="checkbox" />
+                                          <input
+                                                id="inputCheck"
+                                                onClick={() => {
+                                                      setChecked(!checked);
+                                                      console.log(i);
+                                                }}
+                                                className="toggle"
+                                                type="checkbox"
+                                          />
+
                                           <label> {x.value} </label>
                                           <button className="destroy"></button>
                                     </div>
@@ -40,4 +57,4 @@ function list({ todos }) {
       );
 }
 
-export default list;
+export default List;

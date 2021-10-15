@@ -10,7 +10,7 @@ function Input({ todos, addTodos }) {
       const onSubmit = (e) => {
             e.preventDefault();
             // console.log(e.target.value);
-            console.log("value", value);
+            // console.log("value", value);
 
             if (value.value === "") {
                   return false;

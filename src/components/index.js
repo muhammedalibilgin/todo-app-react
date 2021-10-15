@@ -9,7 +9,7 @@ function ToDoMain() {
       const [todos, setTodos] = useState([{ value: "React öğren" }, { value: "JavaScript Öğren" }, { value: "Patikayı Tamamla" }]);
 
       useEffect(() => {
-            console.log("todos değişti", todos);
+            // console.log("todos değişti", todos);
       }, [todos]);
 
       return (
