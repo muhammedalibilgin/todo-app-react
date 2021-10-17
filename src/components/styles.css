@@ -237,8 +237,10 @@ body {
 }
 
 .todo-list li.completed label {
-      color: #d9d9d9;
+      /* color: #d9d9d9; */
+      color: tomato;
       text-decoration: line-through;
+      background-color: #d9d9d9;
 }
 
 .todo-list li .destroy {
@@ -275,6 +277,10 @@ body {
 
 .todo-list li.editing:last-child {
       margin-bottom: -1px;
+}
+
+.destroy-display {
+      display: none;
 }
 
 .footer {
