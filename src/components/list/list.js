@@ -45,7 +45,7 @@ function List({ todos }) {
                         </ul>
                   </section>
 
-                  <footer className="footer">
+                  {/* <footer className="footer">
                         <span className="todo-count">
                               <strong>0 </strong>
                               yapılacak iş
@@ -72,7 +72,7 @@ function List({ todos }) {
                         <button hidden="[todoDone = 0]" className="clear-completed" mv-action="delete(todo where done)">
                               Clear completed
                         </button>
-                  </footer>
+                  </footer> */}
             </div>
       );
 }
